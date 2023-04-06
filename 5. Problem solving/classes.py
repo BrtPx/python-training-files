@@ -1,23 +1,29 @@
+# class of planet objects
 class Planet:
 
+    # class is a blue print of how an object should look and behave
     # class attribute
     shape = "round"
 
-    # instance attributes
-    def __init__(self, name, features, gravity, system, galaxy):
+    def __init__(
+        self, name, features, gravity, system, galaxy
+    ):  # init/constructor function
+
         # self.name = "centauri"
         # self.features = "Size"
         # self.gravity = "24.79 m/s\u00b2"
         # self.system = "Solar System"
         # self.galaxy = "Milky Way"
 
+        # instance attributes/properties
+        # attributes are different for each instance
         self.name = name
         self.features = features
         self.gravity = gravity
         self.system = system
         self.galaxy = galaxy
 
-    # instance methods
+    # instance methods.
     def orbit(self):
         return (
             f"{self.name} is in the {self.system} located in the {self.galaxy} Galaxy"
@@ -34,7 +40,9 @@ class Planet:
         return f"spins and spins at {speed}"
 
 
-jupiter = Planet("Jupiter", "Size", "24.79 m/s\u00b2", "Solar System", "Milky Way")
+jupiter = Planet(
+    "Jupiter", "Size", "24.79 m/s\u00b2", "Solar System", "Milky Way"
+)  # new instance of planet
 print(f"Name is: {jupiter.name}")
 print(f"Main feature is: {jupiter.features}")
 print(f"Gravity is: {jupiter.gravity}")

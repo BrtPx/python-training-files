@@ -20,16 +20,16 @@ print(set(num))
 print(set(names))
 
 
-def life(dicts):
+def life(dicts):  # dictionary function value
     life_colors = list(dicts.values())
     print(dicts)
     print(life_colors)
-    for colour in set(life_colors):
+    for colour in set(life_colors):  # typecast set
         nums = life_colors.count(colour)
         print(f"There are {nums} {colour} around you")
 
 
-natural = {}
+natural = {}  # actual dictionary
 
 while True:
     nature = input("name any object in nature: ")
