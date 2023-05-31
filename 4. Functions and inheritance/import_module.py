@@ -1,7 +1,8 @@
 import sys
 
-sys.path.insert(0, "/Users/brpx/Documents/Python/5. Problem solving")
+# sys.path.insert(0, "/Users/brpx/Documents/Python/5. Problem solving") windows
 
+sys.path.insert(0, "/home/bpx/Documents/python-training-files/5. Problem solving")
 from classes import Planet
 
 saturn = Planet(

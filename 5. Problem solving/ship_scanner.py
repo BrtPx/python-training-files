@@ -2,8 +2,13 @@
 
 import sys
 
+# sys.path.insert(
+#     0, "/Users/brpx/Documents/Python/4. Functions and inheritance/space_ships_package"
+# )
+
 sys.path.insert(
-    0, "/Users/brpx/Documents/Python/4. Functions and inheritance/space_ships_package"
+    0,
+    "/home/bpx/Documents/python-training-files/4. Functions and inheritance/space_ships_package",
 )
 
 
